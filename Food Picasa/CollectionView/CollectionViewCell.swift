@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FruitCell: UICollectionViewCell {
+class CollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var caption: UILabel!
     @IBOutlet weak var imageView: UIImageView!

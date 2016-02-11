@@ -43,7 +43,11 @@ class SwipeContainerView:UIViewController {
         var menuiconArray : [String] = []
         var unselectedmenuiconArray : [String] = []
         
-        var controller1 : RestaurantsMapView = RestaurantsMapView(nibName: "RestaurantsMapView", bundle: nil)
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let controller1 = storyboard.instantiateViewControllerWithIdentifier("RestaurantsMapView") 
+        
+       // var controller1 : RestaurantsMapView = RestaurantsMapView(nibName: "RestaurantsMapView", bundle: nil)
+//        let controller1 = self.storyboard?.instantiateViewControllerWithIdentifier("RestaurantsMapView") as! RestaurantMenuItems
         controller1.title = "Map View"
         
         menuiconArray.append("selectedswipemap");
@@ -51,7 +55,9 @@ class SwipeContainerView:UIViewController {
         
         controllerArray.append(controller1)
         
-        var controller2 : RestaurantsGridView = RestaurantsGridView(nibName: "RestaurantsGridView", bundle: nil)
+        let controller2 = storyboard.instantiateViewControllerWithIdentifier("RestaurantsGridView") 
+     //   var controller2 : RestaurantsGridView = RestaurantsGridView(nibName: "RestaurantsGridView", bundle: nil)
+     //   let controller2 = self.storyboard?.instantiateViewControllerWithIdentifier("RestaurantsGridView") as! RestaurantMenuItems
         controller2.title = "Table View"
         controllerArray.append(controller2)
         menuiconArray.append("selectedlistview");
@@ -59,7 +65,7 @@ class SwipeContainerView:UIViewController {
         
       
         // Customize menu (Optional)
-        var parameters: [CAPSPageMenuOption] = [
+        let parameters: [CAPSPageMenuOption] = [
             .ScrollMenuBackgroundColor(UIColor(red: 249.0/255.0, green: 245.0/255.0, blue: 249.0/255.0, alpha: 1.0)),
             .SelectionIndicatorColor(UIColor(red: 128.0/255.0, green: 128.0/255.0, blue: 128.0/255.0, alpha: 1.0)),
             .BottomMenuHairlineColor(UIColor(red: 128.0/255.0, green: 70.0/255.0, blue: 173.0/255.0, alpha: 1.0)),
@@ -84,7 +90,7 @@ class SwipeContainerView:UIViewController {
     }
     
     func didTapGoToLeft() {
-        var currentIndex = pageMenu!.currentPageIndex
+        let currentIndex = pageMenu!.currentPageIndex
         
         if currentIndex > 0 {
             pageMenu!.moveToPage(currentIndex - 1)
@@ -92,7 +98,7 @@ class SwipeContainerView:UIViewController {
     }
     
     func didTapGoToRight() {
-        var currentIndex = pageMenu!.currentPageIndex
+        let currentIndex = pageMenu!.currentPageIndex
         
         if currentIndex < pageMenu!.controllerArray.count {
             pageMenu!.moveToPage(currentIndex + 1)

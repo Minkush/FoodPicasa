@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18340BC11C65FCE800F877EA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18340BC01C65FCE800F877EA /* Images.xcassets */; };
+		18340BCA1C66237600F877EA /* GlobalAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18340BC81C66237600F877EA /* GlobalAPI.swift */; };
+		18340BCB1C66237600F877EA /* ProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18340BC91C66237600F877EA /* ProgressHUD.swift */; };
+		18340BD01C66239200F877EA /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18340BCD1C66239200F877EA /* CollectionViewCell.swift */; };
+		18340BD61C66319800F877EA /* menu-placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 18340BD51C66319800F877EA /* menu-placeholder.png */; };
+		18EFB7EE1C677C5700B03D9E /* RestaurantMenuCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EFB7ED1C677C5700B03D9E /* RestaurantMenuCategory.swift */; };
+		18F2ADE11C65C74700C61B54 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F2ADDB1C65C5D200C61B54 /* Alamofire.framework */; };
+		18F2ADE21C65C74700C61B54 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 18F2ADDB1C65C5D200C61B54 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		18F355641C6521AD0064C2E6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F3555F1C651C0D0064C2E6 /* CoreGraphics.framework */; };
+		18F355661C6521BA0064C2E6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F355651C6521BA0064C2E6 /* Foundation.framework */; };
+		18F355681C6521C20064C2E6 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F355671C6521C20064C2E6 /* MobileCoreServices.framework */; };
+		18F3556A1C6521CC0064C2E6 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F355691C6521CC0064C2E6 /* Security.framework */; };
+		18F3557E1C65224F0064C2E6 /* libAFNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F3557D1C65224F0064C2E6 /* libAFNetworking.a */; };
+		5F0BE72869A9343CD84A1474 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74F3FAA8DABA36713669150D /* Pods.framework */; };
 		C78AB7AC1C25DD3E00BC3AF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78AB7AB1C25DD3E00BC3AF6 /* AppDelegate.swift */; };
 		C78AB7AF1C25DD3E00BC3AF6 /* Food_Picasa.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C78AB7AD1C25DD3E00BC3AF6 /* Food_Picasa.xcdatamodeld */; };
 		C78AB7B11C25DD3E00BC3AF6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78AB7B01C25DD3E00BC3AF6 /* ViewController.swift */; };
@@ -14,9 +28,51 @@
 		C78AB7B61C25DD3E00BC3AF6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C78AB7B51C25DD3E00BC3AF6 /* Images.xcassets */; };
 		C78AB7B91C25DD3E00BC3AF6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C78AB7B71C25DD3E00BC3AF6 /* LaunchScreen.xib */; };
 		C78AB7C51C25DD3E00BC3AF6 /* Food_PicasaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78AB7C41C25DD3E00BC3AF6 /* Food_PicasaTests.swift */; };
+		C78AB7D11C25DDC000BC3AF6 /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C78AB7CF1C25DDC000BC3AF6 /* GoogleMaps.bundle */; };
+		C78AB7EC1C25DE6300BC3AF6 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C78AB7E91C25DE3B00BC3AF6 /* AVFoundation.framework */; };
+		C78AB7ED1C25DE6300BC3AF6 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C78AB7E71C25DE3400BC3AF6 /* CoreData.framework */; };
+		C78AB7EE1C25DE6300BC3AF6 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C78AB7E51C25DE2D00BC3AF6 /* CoreLocation.framework */; };
+		C78AB7EF1C25DE6300BC3AF6 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C78AB7E31C25DE2700BC3AF6 /* CoreText.framework */; };
+		C78AB7F01C25DE6300BC3AF6 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C78AB7E11C25DE1E00BC3AF6 /* GLKit.framework */; };
+		C78AB7F11C25DE6300BC3AF6 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C78AB7DF1C25DE1800BC3AF6 /* ImageIO.framework */; };
+		C78AB7F21C25DE6300BC3AF6 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C78AB7DD1C25DE0C00BC3AF6 /* libc++.dylib */; };
+		C78AB7F31C25DE6300BC3AF6 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C78AB7DB1C25DE0000BC3AF6 /* libicucore.dylib */; };
+		C78AB7F41C25DE6300BC3AF6 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C78AB7D91C25DDF800BC3AF6 /* libz.dylib */; };
+		C78AB7F51C25DE6300BC3AF6 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C78AB7D71C25DDF200BC3AF6 /* OpenGLES.framework */; };
+		C78AB7F61C25DE6300BC3AF6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C78AB7D51C25DDE900BC3AF6 /* QuartzCore.framework */; };
+		C78AB7F71C25DE6300BC3AF6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C78AB7D31C25DDE400BC3AF6 /* SystemConfiguration.framework */; };
+		C78AB8021C25DF9000BC3AF6 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C78AB8011C25DF9000BC3AF6 /* SWRevealViewController.m */; };
+		C78AB8071C25DFA000BC3AF6 /* RestaurantsGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78AB8031C25DFA000BC3AF6 /* RestaurantsGridView.swift */; };
+		C78AB8091C25DFA100BC3AF6 /* RestaurantsMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78AB8051C25DFA000BC3AF6 /* RestaurantsMapView.swift */; };
+		C78AB80D1C25DFB400BC3AF6 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78AB80B1C25DFB400BC3AF6 /* MenuController.swift */; };
+		C78AB80E1C25DFB400BC3AF6 /* SwipeContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78AB80C1C25DFB400BC3AF6 /* SwipeContainerView.swift */; };
+		C78AB8101C25DFCB00BC3AF6 /* CAPSPageMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78AB80F1C25DFCB00BC3AF6 /* CAPSPageMenu.swift */; };
+		C78AB8111C25E6CF00BC3AF6 /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C78AB7D01C25DDC000BC3AF6 /* GoogleMaps.framework */; };
+		C7B6862A1C26CB230077864F /* RestaurantMenuItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B686291C26CB230077864F /* RestaurantMenuItems.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		18F2ADDA1C65C5D200C61B54 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18F2ADD51C65C5D200C61B54 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DD434AED73B642F39D982866408EDC1A;
+			remoteInfo = Alamofire;
+		};
+		18F2ADDC1C65C5D200C61B54 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18F2ADD51C65C5D200C61B54 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 107E36DD8FC301E2139617F854F330D5;
+			remoteInfo = Pods;
+		};
+		18F2ADE31C65C74700C61B54 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18F2ADD51C65C5D200C61B54 /* Pods.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 432ECC54282C84882B482CCB4CF227FC;
+			remoteInfo = Alamofire;
+		};
 		C78AB7BF1C25DD3E00BC3AF6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C78AB79E1C25DD3E00BC3AF6 /* Project object */;
@@ -26,7 +82,35 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		18F2ADE51C65C74700C61B54 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				18F2ADE21C65C74700C61B54 /* Alamofire.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		18340BC01C65FCE800F877EA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		18340BC81C66237600F877EA /* GlobalAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GlobalAPI.swift; path = GlobalSupportingClasses/GlobalAPI.swift; sourceTree = "<group>"; };
+		18340BC91C66237600F877EA /* ProgressHUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProgressHUD.swift; path = GlobalSupportingClasses/ProgressHUD.swift; sourceTree = "<group>"; };
+		18340BCD1C66239200F877EA /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectionViewCell.swift; path = "Food Picasa/CollectionView/CollectionViewCell.swift"; sourceTree = "<group>"; };
+		18340BD51C66319800F877EA /* menu-placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "menu-placeholder.png"; path = "Images/menu-placeholder.png"; sourceTree = "<group>"; };
+		18EFB7ED1C677C5700B03D9E /* RestaurantMenuCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RestaurantMenuCategory.swift; path = "Food Picasa/RestaurantMenuClasses/RestaurantMenuCategory.swift"; sourceTree = "<group>"; };
+		18F2ADD51C65C5D200C61B54 /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = Pods/Pods.xcodeproj; sourceTree = "<group>"; };
+		18F3555F1C651C0D0064C2E6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		18F355651C6521BA0064C2E6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		18F355671C6521C20064C2E6 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		18F355691C6521CC0064C2E6 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		18F3557D1C65224F0064C2E6 /* libAFNetworking.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAFNetworking.a; path = "Pods/../build/Debug-iphoneos/libAFNetworking.a"; sourceTree = "<group>"; };
+		3E640BCE5F9B58ED5A04CDEC /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		74F3FAA8DABA36713669150D /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C78AB7A61C25DD3E00BC3AF6 /* Food Picasa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Food Picasa.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C78AB7AA1C25DD3E00BC3AF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C78AB7AB1C25DD3E00BC3AF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +122,30 @@
 		C78AB7BE1C25DD3E00BC3AF6 /* Food PicasaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Food PicasaTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C78AB7C31C25DD3E00BC3AF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C78AB7C41C25DD3E00BC3AF6 /* Food_PicasaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food_PicasaTests.swift; sourceTree = "<group>"; };
+		C78AB7CF1C25DDC000BC3AF6 /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GoogleMaps.bundle; sourceTree = "<group>"; };
+		C78AB7D01C25DDC000BC3AF6 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMaps.framework; sourceTree = "<group>"; };
+		C78AB7D31C25DDE400BC3AF6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		C78AB7D51C25DDE900BC3AF6 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		C78AB7D71C25DDF200BC3AF6 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		C78AB7D91C25DDF800BC3AF6 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		C78AB7DB1C25DE0000BC3AF6 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		C78AB7DD1C25DE0C00BC3AF6 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		C78AB7DF1C25DE1800BC3AF6 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		C78AB7E11C25DE1E00BC3AF6 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		C78AB7E31C25DE2700BC3AF6 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		C78AB7E51C25DE2D00BC3AF6 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		C78AB7E71C25DE3400BC3AF6 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		C78AB7E91C25DE3B00BC3AF6 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		C78AB7F91C25DEF600BC3AF6 /* Food Picasa-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Food Picasa-Bridging-Header.h"; sourceTree = "<group>"; };
+		C78AB8001C25DF9000BC3AF6 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = "Food Picasa/SWRevealViewController/SWRevealViewController.h"; sourceTree = "<group>"; };
+		C78AB8011C25DF9000BC3AF6 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = "Food Picasa/SWRevealViewController/SWRevealViewController.m"; sourceTree = "<group>"; };
+		C78AB8031C25DFA000BC3AF6 /* RestaurantsGridView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RestaurantsGridView.swift; path = "Food Picasa/SwipeMenu/RestaurantsGridView.swift"; sourceTree = "<group>"; };
+		C78AB8051C25DFA000BC3AF6 /* RestaurantsMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RestaurantsMapView.swift; path = "Food Picasa/SwipeMenu/RestaurantsMapView.swift"; sourceTree = "<group>"; };
+		C78AB80B1C25DFB400BC3AF6 /* MenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuController.swift; path = "Food Picasa/MenusView/MenuController.swift"; sourceTree = "<group>"; };
+		C78AB80C1C25DFB400BC3AF6 /* SwipeContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwipeContainerView.swift; path = "Food Picasa/MenusView/SwipeContainerView.swift"; sourceTree = "<group>"; };
+		C78AB80F1C25DFCB00BC3AF6 /* CAPSPageMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CAPSPageMenu.swift; path = "Food Picasa/CAPSPageMenu/CAPSPageMenu.swift"; sourceTree = "<group>"; };
+		C7B686291C26CB230077864F /* RestaurantMenuItems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RestaurantMenuItems.swift; path = "Food Picasa/RestaurantMenuClasses/RestaurantMenuItems.swift"; sourceTree = "<group>"; };
+		F3E5CFE194B4B9499692775F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +153,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18F3557E1C65224F0064C2E6 /* libAFNetworking.a in Frameworks */,
+				18F3556A1C6521CC0064C2E6 /* Security.framework in Frameworks */,
+				18F355681C6521C20064C2E6 /* MobileCoreServices.framework in Frameworks */,
+				18F2ADE11C65C74700C61B54 /* Alamofire.framework in Frameworks */,
+				18F355661C6521BA0064C2E6 /* Foundation.framework in Frameworks */,
+				18F355641C6521AD0064C2E6 /* CoreGraphics.framework in Frameworks */,
+				C78AB8111C25E6CF00BC3AF6 /* GoogleMaps.framework in Frameworks */,
+				C78AB7EC1C25DE6300BC3AF6 /* AVFoundation.framework in Frameworks */,
+				C78AB7ED1C25DE6300BC3AF6 /* CoreData.framework in Frameworks */,
+				C78AB7EE1C25DE6300BC3AF6 /* CoreLocation.framework in Frameworks */,
+				C78AB7EF1C25DE6300BC3AF6 /* CoreText.framework in Frameworks */,
+				C78AB7F01C25DE6300BC3AF6 /* GLKit.framework in Frameworks */,
+				C78AB7F11C25DE6300BC3AF6 /* ImageIO.framework in Frameworks */,
+				C78AB7F21C25DE6300BC3AF6 /* libc++.dylib in Frameworks */,
+				C78AB7F31C25DE6300BC3AF6 /* libicucore.dylib in Frameworks */,
+				C78AB7F41C25DE6300BC3AF6 /* libz.dylib in Frameworks */,
+				C78AB7F51C25DE6300BC3AF6 /* OpenGLES.framework in Frameworks */,
+				C78AB7F61C25DE6300BC3AF6 /* QuartzCore.framework in Frameworks */,
+				C78AB7F71C25DE6300BC3AF6 /* SystemConfiguration.framework in Frameworks */,
+				5F0BE72869A9343CD84A1474 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,12 +186,91 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18340BC21C6602D400F877EA /* GlobalSupportingClasses */ = {
+			isa = PBXGroup;
+			children = (
+				18340BC81C66237600F877EA /* GlobalAPI.swift */,
+				18340BC91C66237600F877EA /* ProgressHUD.swift */,
+			);
+			name = GlobalSupportingClasses;
+			sourceTree = "<group>";
+		};
+		18340BC71C6622C000F877EA /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				18340BCD1C66239200F877EA /* CollectionViewCell.swift */,
+			);
+			name = CollectionView;
+			sourceTree = "<group>";
+		};
+		18340BD21C66308500F877EA /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				18340BD51C66319800F877EA /* menu-placeholder.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		18F2ADD61C65C5D200C61B54 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18F2ADDB1C65C5D200C61B54 /* Alamofire.framework */,
+				18F2ADDD1C65C5D200C61B54 /* Pods.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18F355611C651CC50064C2E6 /* Http */ = {
+			isa = PBXGroup;
+			children = (
+				18340BC01C65FCE800F877EA /* Images.xcassets */,
+			);
+			name = Http;
+			sourceTree = "<group>";
+		};
+		19290998A038C3DBAC29889C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3E640BCE5F9B58ED5A04CDEC /* Pods.debug.xcconfig */,
+				F3E5CFE194B4B9499692775F /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		21183D87B91F0507261040AD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18F2ADD51C65C5D200C61B54 /* Pods.xcodeproj */,
+				18F3557D1C65224F0064C2E6 /* libAFNetworking.a */,
+				18F355691C6521CC0064C2E6 /* Security.framework */,
+				18F355671C6521C20064C2E6 /* MobileCoreServices.framework */,
+				18F355651C6521BA0064C2E6 /* Foundation.framework */,
+				18F3555F1C651C0D0064C2E6 /* CoreGraphics.framework */,
+				74F3FAA8DABA36713669150D /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C78AB79D1C25DD3E00BC3AF6 = {
 			isa = PBXGroup;
 			children = (
+				18340BD21C66308500F877EA /* Images */,
+				18340BC71C6622C000F877EA /* CollectionView */,
+				18340BC21C6602D400F877EA /* GlobalSupportingClasses */,
+				18F355611C651CC50064C2E6 /* Http */,
+				C7B686281C26CAB30077864F /* RestaurantMenuClasses */,
+				C78AB7FF1C25DF7800BC3AF6 /* SWRevealViewController */,
+				C78AB7FE1C25DF6E00BC3AF6 /* SwipeMenu */,
+				C78AB7FD1C25DF5D00BC3AF6 /* MenusView */,
+				C78AB7FC1C25DF5200BC3AF6 /* CAPSPageMenu */,
+				C78AB7F81C25DED300BC3AF6 /* Bridge Header */,
+				C78AB7CE1C25DDAB00BC3AF6 /* Google Maps SDK */,
 				C78AB7A81C25DD3E00BC3AF6 /* Food Picasa */,
 				C78AB7C11C25DD3E00BC3AF6 /* Food PicasaTests */,
 				C78AB7A71C25DD3E00BC3AF6 /* Products */,
+				C78AB7EB1C25DE4100BC3AF6 /* Framework */,
+				19290998A038C3DBAC29889C /* Pods */,
+				21183D87B91F0507261040AD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -115,6 +322,86 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		C78AB7CE1C25DDAB00BC3AF6 /* Google Maps SDK */ = {
+			isa = PBXGroup;
+			children = (
+				C78AB7CF1C25DDC000BC3AF6 /* GoogleMaps.bundle */,
+				C78AB7D01C25DDC000BC3AF6 /* GoogleMaps.framework */,
+			);
+			name = "Google Maps SDK";
+			sourceTree = "<group>";
+		};
+		C78AB7EB1C25DE4100BC3AF6 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				C78AB7E91C25DE3B00BC3AF6 /* AVFoundation.framework */,
+				C78AB7E71C25DE3400BC3AF6 /* CoreData.framework */,
+				C78AB7E51C25DE2D00BC3AF6 /* CoreLocation.framework */,
+				C78AB7E31C25DE2700BC3AF6 /* CoreText.framework */,
+				C78AB7E11C25DE1E00BC3AF6 /* GLKit.framework */,
+				C78AB7DF1C25DE1800BC3AF6 /* ImageIO.framework */,
+				C78AB7DD1C25DE0C00BC3AF6 /* libc++.dylib */,
+				C78AB7DB1C25DE0000BC3AF6 /* libicucore.dylib */,
+				C78AB7D91C25DDF800BC3AF6 /* libz.dylib */,
+				C78AB7D71C25DDF200BC3AF6 /* OpenGLES.framework */,
+				C78AB7D51C25DDE900BC3AF6 /* QuartzCore.framework */,
+				C78AB7D31C25DDE400BC3AF6 /* SystemConfiguration.framework */,
+			);
+			name = Framework;
+			sourceTree = "<group>";
+		};
+		C78AB7F81C25DED300BC3AF6 /* Bridge Header */ = {
+			isa = PBXGroup;
+			children = (
+				C78AB7F91C25DEF600BC3AF6 /* Food Picasa-Bridging-Header.h */,
+			);
+			name = "Bridge Header";
+			sourceTree = "<group>";
+		};
+		C78AB7FC1C25DF5200BC3AF6 /* CAPSPageMenu */ = {
+			isa = PBXGroup;
+			children = (
+				C78AB80F1C25DFCB00BC3AF6 /* CAPSPageMenu.swift */,
+			);
+			name = CAPSPageMenu;
+			sourceTree = "<group>";
+		};
+		C78AB7FD1C25DF5D00BC3AF6 /* MenusView */ = {
+			isa = PBXGroup;
+			children = (
+				C78AB80B1C25DFB400BC3AF6 /* MenuController.swift */,
+				C78AB80C1C25DFB400BC3AF6 /* SwipeContainerView.swift */,
+			);
+			name = MenusView;
+			sourceTree = "<group>";
+		};
+		C78AB7FE1C25DF6E00BC3AF6 /* SwipeMenu */ = {
+			isa = PBXGroup;
+			children = (
+				C78AB8031C25DFA000BC3AF6 /* RestaurantsGridView.swift */,
+				C78AB8051C25DFA000BC3AF6 /* RestaurantsMapView.swift */,
+			);
+			name = SwipeMenu;
+			sourceTree = "<group>";
+		};
+		C78AB7FF1C25DF7800BC3AF6 /* SWRevealViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C78AB8001C25DF9000BC3AF6 /* SWRevealViewController.h */,
+				C78AB8011C25DF9000BC3AF6 /* SWRevealViewController.m */,
+			);
+			name = SWRevealViewController;
+			sourceTree = "<group>";
+		};
+		C7B686281C26CAB30077864F /* RestaurantMenuClasses */ = {
+			isa = PBXGroup;
+			children = (
+				C7B686291C26CB230077864F /* RestaurantMenuItems.swift */,
+				18EFB7ED1C677C5700B03D9E /* RestaurantMenuCategory.swift */,
+			);
+			name = RestaurantMenuClasses;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,13 +409,18 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C78AB7C81C25DD3E00BC3AF6 /* Build configuration list for PBXNativeTarget "Food Picasa" */;
 			buildPhases = (
+				5A71071429CC308786C280B3 /* Check Pods Manifest.lock */,
 				C78AB7A21C25DD3E00BC3AF6 /* Sources */,
 				C78AB7A31C25DD3E00BC3AF6 /* Frameworks */,
 				C78AB7A41C25DD3E00BC3AF6 /* Resources */,
+				1589D85C8B76379729F83CAD /* Embed Pods Frameworks */,
+				27AE1B4122F088C44E65D224 /* Copy Pods Resources */,
+				18F2ADE51C65C74700C61B54 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				18F2ADE41C65C74700C61B54 /* PBXTargetDependency */,
 			);
 			name = "Food Picasa";
 			productName = "Food Picasa";
@@ -159,7 +451,8 @@
 		C78AB79E1C25DD3E00BC3AF6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Origa Corporation";
 				TargetAttributes = {
 					C78AB7A51C25DD3E00BC3AF6 = {
@@ -182,6 +475,12 @@
 			mainGroup = C78AB79D1C25DD3E00BC3AF6;
 			productRefGroup = C78AB7A71C25DD3E00BC3AF6 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 18F2ADD61C65C5D200C61B54 /* Products */;
+					ProjectRef = 18F2ADD51C65C5D200C61B54 /* Pods.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				C78AB7A51C25DD3E00BC3AF6 /* Food Picasa */,
@@ -190,6 +489,23 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		18F2ADDB1C65C5D200C61B54 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 18F2ADDA1C65C5D200C61B54 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		18F2ADDD1C65C5D200C61B54 /* Pods.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Pods.framework;
+			remoteRef = 18F2ADDC1C65C5D200C61B54 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		C78AB7A41C25DD3E00BC3AF6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
@@ -197,7 +513,10 @@
 			files = (
 				C78AB7B41C25DD3E00BC3AF6 /* Main.storyboard in Resources */,
 				C78AB7B91C25DD3E00BC3AF6 /* LaunchScreen.xib in Resources */,
+				18340BD61C66319800F877EA /* menu-placeholder.png in Resources */,
+				18340BC11C65FCE800F877EA /* Images.xcassets in Resources */,
 				C78AB7B61C25DD3E00BC3AF6 /* Images.xcassets in Resources */,
+				C78AB7D11C25DDC000BC3AF6 /* GoogleMaps.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,14 +529,73 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1589D85C8B76379729F83CAD /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		27AE1B4122F088C44E65D224 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5A71071429CC308786C280B3 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C78AB7A21C25DD3E00BC3AF6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				C78AB7B11C25DD3E00BC3AF6 /* ViewController.swift in Sources */,
+				18EFB7EE1C677C5700B03D9E /* RestaurantMenuCategory.swift in Sources */,
+				C78AB80E1C25DFB400BC3AF6 /* SwipeContainerView.swift in Sources */,
+				C78AB80D1C25DFB400BC3AF6 /* MenuController.swift in Sources */,
+				18340BD01C66239200F877EA /* CollectionViewCell.swift in Sources */,
+				C78AB8071C25DFA000BC3AF6 /* RestaurantsGridView.swift in Sources */,
+				18340BCA1C66237600F877EA /* GlobalAPI.swift in Sources */,
+				18340BCB1C66237600F877EA /* ProgressHUD.swift in Sources */,
+				C7B6862A1C26CB230077864F /* RestaurantMenuItems.swift in Sources */,
 				C78AB7AF1C25DD3E00BC3AF6 /* Food_Picasa.xcdatamodeld in Sources */,
 				C78AB7AC1C25DD3E00BC3AF6 /* AppDelegate.swift in Sources */,
+				C78AB8091C25DFA100BC3AF6 /* RestaurantsMapView.swift in Sources */,
+				C78AB8021C25DF9000BC3AF6 /* SWRevealViewController.m in Sources */,
+				C78AB8101C25DFCB00BC3AF6 /* CAPSPageMenu.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,6 +610,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		18F2ADE41C65C74700C61B54 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			targetProxy = 18F2ADE31C65C74700C61B54 /* PBXContainerItemProxy */;
+		};
 		C78AB7C01C25DD3E00BC3AF6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = C78AB7A51C25DD3E00BC3AF6 /* Food Picasa */;
@@ -280,6 +663,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -298,6 +682,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -336,6 +721,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -344,21 +730,52 @@
 		};
 		C78AB7C91C25DD3E00BC3AF6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E640BCE5F9B58ED5A04CDEC /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Food Picasa/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.origacorporation.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Food Picasa-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		C78AB7CA1C25DD3E00BC3AF6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3E5CFE194B4B9499692775F /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Food Picasa/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.origacorporation.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Food Picasa-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -376,6 +793,12 @@
 				);
 				INFOPLIST_FILE = "Food PicasaTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					XCTest,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.origacorporation.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Food Picasa.app/Food Picasa";
 			};
@@ -391,6 +814,12 @@
 				);
 				INFOPLIST_FILE = "Food PicasaTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					XCTest,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.origacorporation.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Food Picasa.app/Food Picasa";
 			};
@@ -415,6 +844,7 @@
 				C78AB7CA1C25DD3E00BC3AF6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C78AB7CB1C25DD3E00BC3AF6 /* Build configuration list for PBXNativeTarget "Food PicasaTests" */ = {
 			isa = XCConfigurationList;
@@ -423,6 +853,7 @@
 				C78AB7CD1C25DD3E00BC3AF6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

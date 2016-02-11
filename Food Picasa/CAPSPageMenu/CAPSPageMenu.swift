@@ -254,7 +254,7 @@ public class CAPSPageMenu: UIViewController, UIScrollViewDelegate, UIGestureReco
     }
     
     required public init(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
+        super.init(coder: aDecoder)!
     }
 	
 	// MARK: - Container View Controller
@@ -273,8 +273,8 @@ public class CAPSPageMenu: UIViewController, UIScrollViewDelegate, UIGestureReco
         
         // Set up controller scroll view
         controllerScrollView.pagingEnabled = true
-     //   controllerScrollView.translatesAutoresizingMaskIntoConstraints = false
-        controllerScrollView.setTranslatesAutoresizingMaskIntoConstraints(false)
+        controllerScrollView.translatesAutoresizingMaskIntoConstraints = false
+       // controllerScrollView.setTranslatesAutoresizingMaskIntoConstraints = false
         controllerScrollView.alwaysBounceHorizontal = enableHorizontalBounce
         controllerScrollView.bounces = enableHorizontalBounce
         
@@ -289,8 +289,8 @@ public class CAPSPageMenu: UIViewController, UIScrollViewDelegate, UIGestureReco
         self.view.addConstraints(controllerScrollView_constraint_V)
         
         // Set up menu scroll view
-       // menuScrollView.translatesAutoresizingMaskIntoConstraints = false
-        menuScrollView.setTranslatesAutoresizingMaskIntoConstraints(false)
+        menuScrollView.translatesAutoresizingMaskIntoConstraints = false
+       // menuScrollView.setTranslatesAutoresizingMaskIntoConstraints(false)
         
         menuScrollView.frame = CGRectMake(0.0, 0.0, self.view.frame.width, menuHeight)
         
@@ -305,8 +305,8 @@ public class CAPSPageMenu: UIViewController, UIScrollViewDelegate, UIGestureReco
         // Add hairline to menu scroll view
         if addBottomMenuHairline {
             let menuBottomHairline : UIView = UIView()
-            menuBottomHairline.setTranslatesAutoresizingMaskIntoConstraints(false)
-          //  menuBottomHairline.translatesAutoresizingMaskIntoConstraints = false
+//            menuBottomHairline.setTranslatesAutoresizingMaskIntoConstraints(false)
+            menuBottomHairline.translatesAutoresizingMaskIntoConstraints = false
             
             self.view.addSubview(menuBottomHairline)
             
@@ -378,7 +378,7 @@ public class CAPSPageMenu: UIViewController, UIScrollViewDelegate, UIGestureReco
                 
                 let titleText : String = controllerTitle != nil ? controllerTitle! : "Menu \(Int(index) + 1)"
                 
-                var itemWidthRect : CGRect = (titleText as NSString).boundingRectWithSize(CGSizeMake(1000, 1000), options: NSStringDrawingOptions.UsesLineFragmentOrigin, attributes: [NSFontAttributeName:menuItemFont], context: nil)
+                let itemWidthRect : CGRect = (titleText as NSString).boundingRectWithSize(CGSizeMake(1000, 1000), options: NSStringDrawingOptions.UsesLineFragmentOrigin, attributes: [NSFontAttributeName:menuItemFont], context: nil)
                 
                 menuItemWidth = itemWidthRect.width
                 
@@ -402,7 +402,7 @@ public class CAPSPageMenu: UIViewController, UIScrollViewDelegate, UIGestureReco
             
             let menuItemView : MenuItemView = MenuItemView(frame: menuItemFrame)
             
-            var image: UIImage = UIImage(named: unselectedmenuiconArray[Int(index)])!
+            let image: UIImage = UIImage(named: unselectedmenuiconArray[Int(index)])!
             menuItemView.bgImage = UIImageView(image: image)
             menuItemView.bgImage!.frame = CGRectMake(0.0,0.0,30,30)
             
@@ -464,7 +464,7 @@ public class CAPSPageMenu: UIViewController, UIScrollViewDelegate, UIGestureReco
         
 
 
-        var selctedbgImagename = self.menuItems[self.currentPageIndex].selctedbgImagename
+        let selctedbgImagename = self.menuItems[self.currentPageIndex].selctedbgImagename
         
         self.menuItems[self.currentPageIndex].bgImage!.image = UIImage(named:  selctedbgImagename!)!
         
@@ -507,7 +507,7 @@ public class CAPSPageMenu: UIViewController, UIScrollViewDelegate, UIGestureReco
             let leadingAndTrailingMargin = self.getMarginForMenuItemWidthBasedOnTitleTextWidthAndCenterMenuItems()
             
             // adjust the margin of each menu item to make them centered
-            for (index, menuItem) in enumerate(menuItems) {
+            for (index, menuItem) in menuItems.enumerate() {
                 let controllerTitle = controllerArray[index].title!
                 
                 let itemWidthRect = controllerTitle.boundingRectWithSize(CGSizeMake(1000, 1000), options: NSStringDrawingOptions.UsesLineFragmentOrigin, attributes: [NSFontAttributeName:menuItemFont], context: nil)
@@ -529,7 +529,7 @@ public class CAPSPageMenu: UIViewController, UIScrollViewDelegate, UIGestureReco
             }
         } else {
             // the menuScrollView.contentSize.width exceeds the view's width, so layout the menu items normally (menuItemWidthBasedOnTitleTextWidth)
-            for (index, menuItem) in enumerate(menuItems) {
+            for (index, menuItem) in menuItems.enumerate() {
                 var menuItemX: CGFloat
                 if index == 0 {
                     menuItemX = menuMargin
@@ -757,8 +757,8 @@ public class CAPSPageMenu: UIViewController, UIScrollViewDelegate, UIGestureReco
                 
   
                 
-                var lastPageimage = self.menuItems[self.lastPageIndex].unselctedbgImagename
-                var currentPageimage = self.menuItems[self.currentPageIndex].selctedbgImagename
+                let lastPageimage = self.menuItems[self.lastPageIndex].unselctedbgImagename
+                let currentPageimage = self.menuItems[self.currentPageIndex].selctedbgImagename
                 
                 self.menuItems[self.lastPageIndex].bgImage!.image = UIImage(named: lastPageimage!)!
                 self.menuItems[self.currentPageIndex].bgImage!.image = UIImage(named:  currentPageimage!)!
@@ -798,7 +798,7 @@ public class CAPSPageMenu: UIViewController, UIScrollViewDelegate, UIGestureReco
                     menuItemRightBound = CGRectGetMaxX(menuItems[menuItems.count-1].frame)
                     
                     if (tappedPoint.x >= menuItemLeftBound && tappedPoint.x <= menuItemRightBound) {
-                        for (index, _) in enumerate(controllerArray) {
+                        for (index, _) in controllerArray.enumerate() {
                             menuItemLeftBound = CGRectGetMinX(menuItems[index].frame)
                             menuItemRightBound = CGRectGetMaxX(menuItems[index].frame)
                             
@@ -968,7 +968,7 @@ public class CAPSPageMenu: UIViewController, UIScrollViewDelegate, UIGestureReco
                 }
             }
             
-            for view : UIView in controllerScrollView.subviews as! [UIView]{
+            for view : UIView in controllerScrollView.subviews {
                 view.frame = CGRectMake(self.view.frame.width * CGFloat(currentPageIndex), menuHeight, controllerScrollView.frame.width, self.view.frame.height - menuHeight)
             }
             
